@@ -5,7 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <button id="button">Add</button>
+    </header>
+
+    <h1>Testing</h1>
+
+    <div id="book-container">
+      <div class="book">
+        <h2>The Testing</h2>
+        <p>Author: Someone</p>
+        <p>Pages: 467</p>
+      </div>
+      <div class="book">
+        <h2>The Testing 2</h2>
+        <p>Author: Someone</p>
+        <p>Pages: 584</p>
+      </div>
+      <div class="book">
+        <h2>The Testing 3</h2>
+        <p>Author: Someone</p>
+        <p>Pages: 350</p>
+      </div>
+      <div class="book">
+        <h2>The Testing 4</h2>
+        <p>Author: Someone</p>
+        <p>Pages: 790</p>
+      </div>
+    </div>
+
+    <div class="form">
+      <input type="text" placeholder="author" class="author" />
+      <input type="text" placeholder="title" class="title" />
+      <input type="number" placeholder="number of pages" class="pages" />
+      <button type="submit" class="form-button">Add Book</button>
+    </div>
+  </body>
 </html>
