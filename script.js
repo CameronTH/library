@@ -24,13 +24,30 @@ function addBookToLibrary() {
     const bookTitle = document.createElement("h2");
     const bookAuthor = document.createElement("p");
     const bookPages = document.createElement("p");
+    const bookRemove = document.createElement("button");
     bookDiv.classList.add("book");
+    bookRemove.classList.add("book-remove");
+    bookRemove.textContent = "Remove Book";
     bookTitle.textContent = element.title;
     bookAuthor.textContent = `Author: ${element.author}`;
     bookPages.textContent = `Pages: ${element.pages}`;
+
+    bookRemove.addEventListener("click", () => {
+      myLibrary.forEach((book) => {
+        if (book === element) {
+          index = myLibrary.indexOf(book);
+          myLibrary.splice(myLibrary.indexOf(book), 1);
+          bookContainer.removeChild(bookDiv);
+          console.log(bookDiv);
+          console.log(myLibrary);
+        }
+      });
+    });
+
     bookDiv.appendChild(bookTitle);
     bookDiv.appendChild(bookAuthor);
     bookDiv.appendChild(bookPages);
+    bookDiv.appendChild(bookRemove);
     bookContainer.append(bookDiv);
   });
 }

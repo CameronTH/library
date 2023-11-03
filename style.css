@@ -52,6 +52,19 @@ header > button:hover {
   border-radius: 10px;
 }
 
+.book-remove {
+  margin-top: 1rem;
+  border-style: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: opacity 0.15s;
+  content: Remove;
+}
+
+.book > button:hover {
+  opacity: 0.8;
+}
+
 #my-form {
   display: none;
   position: absolute;
