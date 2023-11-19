@@ -84,7 +84,7 @@ header > button:hover {
 dialog {
   background: rgb(214, 214, 214);
   border-radius: 10px;
-
+  width: min-content;
   border-style: none;
   position: absolute;
   top: 20%;
@@ -120,6 +120,6 @@ form > button {
   transition: opacity 0.15s;
 }
 
-.form > button:hover {
+form > button:hover {
   opacity: 0.8;
 }
